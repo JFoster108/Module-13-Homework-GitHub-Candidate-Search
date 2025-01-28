@@ -96,23 +96,23 @@ tbody tr:nth-child(odd) {
 
 .nav {
   display: flex;
-  justify-content: flex-start;
-  padding: 1em 2em;
+  gap: 1em;
+  padding: 1em;
+  background-color: #333;
+  color: white;
 }
-
 .nav-item {
-  padding: 0 0.5rem;
   list-style: none;
 }
-
 .nav-link {
-  color: #fff;
   text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.nav-link.active {
+  text-decoration: underline;
 }
 
-.active {
-  font-weight: 700;
-}
 
 .table {
   width: 80vw;

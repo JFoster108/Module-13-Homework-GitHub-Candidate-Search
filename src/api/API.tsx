@@ -6,8 +6,7 @@ const searchGithub = async () => {
       `https://api.github.com/users?since=${start}`,
       {
         headers: {
-          Authorization: `Bearer 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`,
-          // Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
+          Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
         },
       }
     );

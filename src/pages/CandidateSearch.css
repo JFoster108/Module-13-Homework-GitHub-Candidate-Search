@@ -1,0 +1,71 @@
+/* Center the entire page content */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  /* Black Box Styling */
+  .candidate-box {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    width: 400px;
+    margin-top: 20px;
+  }
+  
+  /* Avatar Styling */
+  .candidate-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 10px;
+  }
+  
+  /* Button Styling */
+  .button-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .save-btn, .skip-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .save-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background-color: #218838;
+  }
+  
+  .skip-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .skip-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* No More Candidates Message */
+  .no-candidates {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  

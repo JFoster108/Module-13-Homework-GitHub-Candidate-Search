@@ -11,7 +11,12 @@ const SavedCandidates = () => {
           <thead>
             <tr>
               <th>Avatar</th>
+              <th>Name</th>
               <th>Username</th>
+              <th>Location</th>
+              <th>Email</th>
+              <th>Company</th>
+              <th>Profile</th>
               <th>Actions</th>
             </tr>
           </thead>
@@ -19,9 +24,14 @@ const SavedCandidates = () => {
             {savedCandidates.map((candidate) => (
               <tr key={candidate.id}>
                 <td><img src={candidate.avatar_url} alt={candidate.login} width="50" /></td>
+                <td>{candidate.name || 'No Name'}</td>
                 <td>{candidate.login}</td>
+                <td>{candidate.location || 'Not Provided'}</td>
+                <td>{candidate.email || 'Not Provided'}</td>
+                <td>{candidate.company || 'Not Provided'}</td>
+                <td><a href={candidate.html_url} target="_blank">GitHub</a></td>
                 <td>
-                  <button onClick={() => removeCandidate(candidate.id)}>Remove ❌</button>
+                  <button onClick={() => removeCandidate(candidate.id)}>❌ Remove</button>
                 </td>
               </tr>
             ))}

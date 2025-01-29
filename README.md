@@ -2,7 +2,7 @@
 
 ## Description
 
-This is an updated version of an existing GitHub candidate search application where I completed the front end using TypeScript, and called the application's API so the user can find potential candidate's GitHub, and delete them if necessary. This is a homework assignement through the web development bootcamp sponsered by UNC Chapel Hill.
+This is an updated version of an existing GitHub candidate search application utilizing react and vite, where I completed the front end using TypeScript, and called the application's API so the user can find potential candidate's GitHub, and delete them if necessary. This is a homework assignement through the web development bootcamp sponsered by UNC Chapel Hill.
 
 ## Installation
 

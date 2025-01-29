@@ -1,15 +1,19 @@
 import { useState, useEffect } from 'react';
 import { searchGithub } from '../api/API';
 import { Candidate } from '../interfaces/Candidate.interface';
+import { useSavedCandidates } from '../context/SavedCandidatesContext';
 
 const CandidateSearch = () => {
   const [candidates, setCandidates] = useState<Candidate[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const { saveCandidate, savedCandidates } = useSavedCandidates();
 
   useEffect(() => {
     const fetchCandidates = async () => {
       try {
         const data = await searchGithub();
+        console.log('API Response:', data);
+
         if (Array.isArray(data)) {
           setCandidates(data);
         } else {
@@ -22,16 +26,11 @@ const CandidateSearch = () => {
     };
     fetchCandidates();
   }, []);
-  
-  
-
-  if (error) {
-    return <p>Error: {error}</p>;
-  }
 
   return (
     <section>
       <h1>Search Candidates</h1>
+      {error && <p style={{ color: 'red' }}>{error}</p>}
       <table className="table">
         <thead>
           <tr>
@@ -48,7 +47,11 @@ const CandidateSearch = () => {
               </td>
               <td>{candidate.login}</td>
               <td>
-                <button>Save</button>
+                {savedCandidates.some((c) => c.id === candidate.id) ? (
+                  <button disabled>Saved ✅</button>
+                ) : (
+                  <button onClick={() => saveCandidate(candidate)}>Save</button>
+                )}
               </td>
             </tr>
           ))}

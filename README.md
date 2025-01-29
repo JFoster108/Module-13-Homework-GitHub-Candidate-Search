@@ -1,33 +1,30 @@
-# React + TypeScript + Vite
+# Module-13-Homework-GitHub-Candidate-Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This is an updated version of an existing GitHub candidate search application where I completed the front end using TypeScript, and called the application's API so the user can find potential candidate's GitHub, and delete them if necessary. This is a homework assignement through the web development bootcamp sponsered by UNC Chapel Hill.
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+Clone this repository to your system, then run npm run dev to open a local host.
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Usage
 
-* Configure the top-level `parserOptions` property as follows:
+With Node.js installed, you will run the application using your terminal.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Credits
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+N/A
 
+## License
+
+Please refer to the LICENSE in the repository.
+
+
+## Demonstration Video
+
+[Watch the demonstration video](https://drive.google.com/file/d/1rzmK9rgHTDMu2FATGe5VM4nWQIdbDZp4/view)
 ---
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+
+https://drive.google.com/file/d/1rzmK9rgHTDMu2FATGe5VM4nWQIdbDZp4/view

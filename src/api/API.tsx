@@ -1,6 +1,6 @@
 const searchGithub = async () => {
   const start = Math.floor(Math.random() * 100000000) + 1;
-
+console.log(import.meta.env)
   try {
     const response = await fetch(
       `https://api.github.com/users?since=${start}`,

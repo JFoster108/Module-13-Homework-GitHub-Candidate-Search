@@ -1,26 +1,14 @@
 import { NavLink } from 'react-router-dom';
-import './Nav.css';
+import './Nav.css'; // Ensure CSS file is imported
 
 const Nav = () => (
   <nav className="nav">
-    <ul>
-      <li className="nav-item">
-        <NavLink
-          to="/"
-          className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
-        >
-          Search Candidates
-        </NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink
-          to="/SavedCandidates"
-          className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
-        >
-          Saved Candidates
-        </NavLink>
-      </li>
-    </ul>
+    <NavLink to="/" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
+      Search Candidates
+    </NavLink>
+    <NavLink to="/SavedCandidates" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
+      Saved Candidates
+    </NavLink>
   </nav>
 );
 
